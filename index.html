@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery-3.1.1.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <h3><span class="label label-default ">Enter your Key to access details</span></h3>
+    </div>
+
+    <div class="input-group top ">
+        <input type="text " class="form-control " placeholder="Search for your data... " id="addr">
+        <span class="input-group-btn ">
+            <button class="btn btn-default " type="button " onclick="getdetails()">Go!</button>
+            </span>
+    </div>
+    <div>
+        <h3><span class="label label-default ">Fill in the details if not registered</span></h3>
+    </div>
+
+    <div class="input-group mid ">
+        <span class="input-group-addon ">Name</span>
+        <input type="text " class="form-control " placeholder="your name " id="name">
+    </div>
+
+    <div class="input-group mid">
+        <span class="input-group-addon ">Profession</span>
+        <input type="text " class="form-control " placeholder="your profession " id="prof">
+    </div>
+
+    <div class="input-group mid">
+        <span class="input-group-addon">Company</span>
+        <input type="text " class="form-control " placeholder="your employer " id="company">
+    </div>
+
+    <div class="input-group midbutton">
+        <button type="button " class="btn btn-default btn-primary " id="adduser" onclick="addusr()">Save</button>
+    </div>
+    <div>
+        <h3><span class="label label-default ">Below is the registration key, DO NOT LOSE IT</span></h3>
+    </div>
+    <div class="input-group bot">
+        <input type="text " class="form-control " placeholder="your registration key will appear here on successfull registration" id="regaddr">
+    </div>
+
+</body>
+
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+
+<script src="main.js"></script>
+
+</html>
